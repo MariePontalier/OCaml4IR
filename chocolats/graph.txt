@@ -1,0 +1,20 @@
+% définir une usine avec son id (1x) et sa production maximale
+   usine 11 300
+   usine 12 200
+   usine 13 350
+
+   % définir un magasin avec son id (2x) et son stockage maximal
+   magasin 21 100
+   magasin 22 200
+   magasin 23 250
+   magasin 24 100
+
+   % définir une route (arc) entre une usine et un magasin avec le transport maximal
+   route 11 21 50
+   route 11 22 50
+   route 12 22 200
+   route 12 23 100
+   route 12 24 50
+   route 13 23 100
+   route 13 24 50
+

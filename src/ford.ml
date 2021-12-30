@@ -47,7 +47,6 @@ let graph_final graph_initial ff =
   e_fold graph_initial h new_graph
 ;;
 
-(*A REVOIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIR *)
 let flot_max graph start = 
   let arcs = out_arcs graph start in
   let rec somme acu = function 

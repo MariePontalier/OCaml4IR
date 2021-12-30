@@ -18,9 +18,9 @@ type cpath=string
 *)
 
 
-(*on utilise des id élevés pour pas mélanger avec les noeuds*)
-let source = (1000)
-let destination = (1001)
+(*ces ids sont réservés*)
+let source = (1)
+let destination = (2)
 
 (*permet de lire une usine dans le fichier et de la relier au noeud source avec sa production max*)
 let usine graph ligne =
@@ -54,8 +54,8 @@ let commentaire graph line =
     Printf.printf "Unknown line:\n%s\n%!" line ;
     failwith "from_file"
 
-let chocolats_from_file cpath =
-  let infile= open_in cpath in
+let chocolats_from_file path =
+  let infile= open_in path in
   let graphe_initial = new_node (new_node empty_graph source) destination in
   let rec loop graph =
     try
